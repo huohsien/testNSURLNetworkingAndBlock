@@ -18,6 +18,7 @@
 		666FCF951B411CDD00F67DB9 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF921B411CDD00F67DB9 /* p1.png */; };
 		666FCF961B411CDD00F67DB9 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF931B411CDD00F67DB9 /* p2.png */; };
 		666FCF971B411CDD00F67DB9 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF941B411CDD00F67DB9 /* p3.png */; };
+		666FCFCC1B4A63B800F67DB9 /* SimpleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 666FCFCB1B4A63B800F67DB9 /* SimpleImageView.m */; };
 		66E325671B3EA6980096A2C1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E325651B3EA6980096A2C1 /* Photos.framework */; };
 		66E325681B3EA6980096A2C1 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E325661B3EA6980096A2C1 /* PhotosUI.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 		666FCF921B411CDD00F67DB9 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 		666FCF931B411CDD00F67DB9 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
 		666FCF941B411CDD00F67DB9 /* p3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p3.png; sourceTree = "<group>"; };
+		666FCFCA1B4A63B800F67DB9 /* SimpleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleImageView.h; sourceTree = "<group>"; };
+		666FCFCB1B4A63B800F67DB9 /* SimpleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleImageView.m; sourceTree = "<group>"; };
 		66E325651B3EA6980096A2C1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Photos.framework; sourceTree = "<group>"; };
 		66E325661B3EA6980096A2C1 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhotosUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +129,8 @@
 				666E69AB1B3E333000399672 /* testServerAPIClient.m */,
 				666E69AF1B3EA0A800399672 /* PhotoManager.h */,
 				666E69B01B3EA0A800399672 /* PhotoManager.m */,
+				666FCFCA1B4A63B800F67DB9 /* SimpleImageView.h */,
+				666FCFCB1B4A63B800F67DB9 /* SimpleImageView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			files = (
 				666E69AC1B3E333000399672 /* testServerAPIClient.m in Sources */,
 				666E69B11B3EA0A800399672 /* PhotoManager.m in Sources */,
+				666FCFCC1B4A63B800F67DB9 /* SimpleImageView.m in Sources */,
 				666E698D1B3C0B2D00399672 /* ViewController.m in Sources */,
 				666E698A1B3C0B2D00399672 /* AppDelegate.m in Sources */,
 				666E69871B3C0B2D00399672 /* main.m in Sources */,

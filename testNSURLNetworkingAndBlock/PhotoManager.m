@@ -57,8 +57,8 @@ NSString * const kNotificationGotAllImages = @"NotificationGotAllImages";
         }
         requestID =
         [[PHImageManager defaultManager] requestImageDataForAsset:asset options:requestOptions resultHandler:^(NSData *imageData, NSString *dataUTI, UIImageOrientation orientation, NSDictionary *info) {
-            UIImage *image = [UIImage imageWithData:imageData];
-            [self.images addObject:image];
+//            UIImage *image = [UIImage imageWithData:imageData];
+            [self.images addObject:imageData];
             if (count == numberOfPhotos) {
 //                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationGotAllImages object:self];
                 if (success) {
@@ -70,6 +70,7 @@ NSString * const kNotificationGotAllImages = @"NotificationGotAllImages";
                 }
             }
             count++;
+            NSLog(@"count=%d", count);
         }];
     }
     

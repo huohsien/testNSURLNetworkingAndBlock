@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController {
-    NSUInteger counter;
+    NSUInteger index;
 }
 
 - (void)viewDidLoad {
@@ -24,7 +24,9 @@
 //                                                 name:kNotificationGotAllImages
 //                                               object:nil];
     
-    counter = 0;
+    index = 0;
+    self.imagesView = [[SimpleImageView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.imagesView];
     [[PhotoManager sharedManager] getAllPhotosWithSuccess:^{
         NSLog(@"images loaded");
         self.numberOfPhotos = [[PhotoManager sharedManager].images count];
@@ -48,13 +50,17 @@
 }
 
 - (void)showAnImage {
-    UIImage *image = [[PhotoManager sharedManager].images objectAtIndex:counter++];
+//    index = arc4random() % self.numberOfPhotos;
+    if (index >= self.numberOfPhotos) {
+        index = 0;
+    }
+    UIImage *image = [UIImage imageWithData:[[PhotoManager sharedManager].images objectAtIndex:index]];
     NSLog(@"image width=%f, height=%f", image.size.width, image.size.height);
     [self.imagesView setImage:image];
-    [self.imagesView setContentMode:UIViewContentModeScaleAspectFit];
-    if (counter >= self.numberOfPhotos) {
-        counter = 0;
-    }
+//    [self.imagesView setContentMode:UIViewContentModeScaleAspectFit];
+    self.indexLabel.text = [NSString stringWithFormat:@"index:%ld", index];
+    index++;
+
 }
 #pragma mark -- callbacks
 
