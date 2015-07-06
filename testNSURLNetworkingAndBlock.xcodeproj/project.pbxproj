@@ -13,18 +13,14 @@
 		666E69901B3C0B2D00399672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666E698E1B3C0B2D00399672 /* Main.storyboard */; };
 		666E69921B3C0B2D00399672 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666E69911B3C0B2D00399672 /* Images.xcassets */; };
 		666E69951B3C0B2D00399672 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666E69931B3C0B2D00399672 /* LaunchScreen.xib */; };
-		666E69A11B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E69A01B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.m */; };
+		666E69AC1B3E333000399672 /* testServerAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E69AB1B3E333000399672 /* testServerAPIClient.m */; };
+		666E69B11B3EA0A800399672 /* PhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E69B01B3EA0A800399672 /* PhotoManager.m */; };
+		666FCF951B411CDD00F67DB9 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF921B411CDD00F67DB9 /* p1.png */; };
+		666FCF961B411CDD00F67DB9 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF931B411CDD00F67DB9 /* p2.png */; };
+		666FCF971B411CDD00F67DB9 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = 666FCF941B411CDD00F67DB9 /* p3.png */; };
+		66E325671B3EA6980096A2C1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E325651B3EA6980096A2C1 /* Photos.framework */; };
+		66E325681B3EA6980096A2C1 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E325661B3EA6980096A2C1 /* PhotosUI.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		666E699B1B3C0B2D00399672 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 666E69791B3C0B2D00399672 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 666E69801B3C0B2D00399672;
-			remoteInfo = testNSURLNetworkingAndBlock;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		666E69811B3C0B2D00399672 /* testNSURLNetworkingAndBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testNSURLNetworkingAndBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,9 +33,15 @@
 		666E698F1B3C0B2D00399672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		666E69911B3C0B2D00399672 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		666E69941B3C0B2D00399672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		666E699A1B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testNSURLNetworkingAndBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		666E699F1B3C0B2D00399672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		666E69A01B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testNSURLNetworkingAndBlockTests.m; sourceTree = "<group>"; };
+		666E69AA1B3E333000399672 /* testServerAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testServerAPIClient.h; sourceTree = "<group>"; };
+		666E69AB1B3E333000399672 /* testServerAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testServerAPIClient.m; sourceTree = "<group>"; };
+		666E69AF1B3EA0A800399672 /* PhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoManager.h; sourceTree = "<group>"; };
+		666E69B01B3EA0A800399672 /* PhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoManager.m; sourceTree = "<group>"; };
+		666FCF921B411CDD00F67DB9 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
+		666FCF931B411CDD00F67DB9 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
+		666FCF941B411CDD00F67DB9 /* p3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p3.png; sourceTree = "<group>"; };
+		66E325651B3EA6980096A2C1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Photos.framework; sourceTree = "<group>"; };
+		66E325661B3EA6980096A2C1 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhotosUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		666E69971B3C0B2D00399672 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				66E325671B3EA6980096A2C1 /* Photos.framework in Frameworks */,
+				66E325681B3EA6980096A2C1 /* PhotosUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				666E69831B3C0B2D00399672 /* testNSURLNetworkingAndBlock */,
-				666E699D1B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests */,
 				666E69821B3C0B2D00399672 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				666E69811B3C0B2D00399672 /* testNSURLNetworkingAndBlock.app */,
-				666E699A1B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,14 +76,15 @@
 		666E69831B3C0B2D00399672 /* testNSURLNetworkingAndBlock */ = {
 			isa = PBXGroup;
 			children = (
+				666FCF8B1B411C8800F67DB9 /* images */,
 				666E69881B3C0B2D00399672 /* AppDelegate.h */,
 				666E69891B3C0B2D00399672 /* AppDelegate.m */,
-				666E698B1B3C0B2D00399672 /* ViewController.h */,
-				666E698C1B3C0B2D00399672 /* ViewController.m */,
 				666E698E1B3C0B2D00399672 /* Main.storyboard */,
 				666E69911B3C0B2D00399672 /* Images.xcassets */,
 				666E69931B3C0B2D00399672 /* LaunchScreen.xib */,
+				66E325691B3EA6DD0096A2C1 /* Classes */,
 				666E69841B3C0B2D00399672 /* Supporting Files */,
+				66E325641B3EA6830096A2C1 /* Frameworks */,
 			);
 			path = testNSURLNetworkingAndBlock;
 			sourceTree = "<group>";
@@ -102,21 +98,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		666E699D1B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests */ = {
+		666FCF8B1B411C8800F67DB9 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				666E69A01B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.m */,
-				666E699E1B3C0B2D00399672 /* Supporting Files */,
+				666FCF921B411CDD00F67DB9 /* p1.png */,
+				666FCF931B411CDD00F67DB9 /* p2.png */,
+				666FCF941B411CDD00F67DB9 /* p3.png */,
 			);
-			path = testNSURLNetworkingAndBlockTests;
+			name = images;
 			sourceTree = "<group>";
 		};
-		666E699E1B3C0B2D00399672 /* Supporting Files */ = {
+		66E325641B3EA6830096A2C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				666E699F1B3C0B2D00399672 /* Info.plist */,
+				66E325651B3EA6980096A2C1 /* Photos.framework */,
+				66E325661B3EA6980096A2C1 /* PhotosUI.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66E325691B3EA6DD0096A2C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				666E698B1B3C0B2D00399672 /* ViewController.h */,
+				666E698C1B3C0B2D00399672 /* ViewController.m */,
+				666E69AA1B3E333000399672 /* testServerAPIClient.h */,
+				666E69AB1B3E333000399672 /* testServerAPIClient.m */,
+				666E69AF1B3EA0A800399672 /* PhotoManager.h */,
+				666E69B01B3EA0A800399672 /* PhotoManager.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +150,6 @@
 			productReference = 666E69811B3C0B2D00399672 /* testNSURLNetworkingAndBlock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		666E69991B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 666E69A71B3C0B2D00399672 /* Build configuration list for PBXNativeTarget "testNSURLNetworkingAndBlockTests" */;
-			buildPhases = (
-				666E69961B3C0B2D00399672 /* Sources */,
-				666E69971B3C0B2D00399672 /* Frameworks */,
-				666E69981B3C0B2D00399672 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				666E699C1B3C0B2D00399672 /* PBXTargetDependency */,
-			);
-			name = testNSURLNetworkingAndBlockTests;
-			productName = testNSURLNetworkingAndBlockTests;
-			productReference = 666E699A1B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +161,6 @@
 				TargetAttributes = {
 					666E69801B3C0B2D00399672 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					666E69991B3C0B2D00399672 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 666E69801B3C0B2D00399672;
 					};
 				};
 			};
@@ -189,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				666E69801B3C0B2D00399672 /* testNSURLNetworkingAndBlock */,
-				666E69991B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +187,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666FCF961B411CDD00F67DB9 /* p2.png in Resources */,
 				666E69901B3C0B2D00399672 /* Main.storyboard in Resources */,
+				666FCF971B411CDD00F67DB9 /* p3.png in Resources */,
 				666E69951B3C0B2D00399672 /* LaunchScreen.xib in Resources */,
+				666FCF951B411CDD00F67DB9 /* p1.png in Resources */,
 				666E69921B3C0B2D00399672 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		666E69981B3C0B2D00399672 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,29 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666E69AC1B3E333000399672 /* testServerAPIClient.m in Sources */,
+				666E69B11B3EA0A800399672 /* PhotoManager.m in Sources */,
 				666E698D1B3C0B2D00399672 /* ViewController.m in Sources */,
 				666E698A1B3C0B2D00399672 /* AppDelegate.m in Sources */,
 				666E69871B3C0B2D00399672 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		666E69961B3C0B2D00399672 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				666E69A11B3C0B2D00399672 /* testNSURLNetworkingAndBlockTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		666E699C1B3C0B2D00399672 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 666E69801B3C0B2D00399672 /* testNSURLNetworkingAndBlock */;
-			targetProxy = 666E699B1B3C0B2D00399672 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		666E698E1B3C0B2D00399672 /* Main.storyboard */ = {
@@ -343,6 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testNSURLNetworkingAndBlock",
+				);
 				INFOPLIST_FILE = testNSURLNetworkingAndBlock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -354,44 +328,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testNSURLNetworkingAndBlock",
+				);
 				INFOPLIST_FILE = testNSURLNetworkingAndBlock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		666E69A81B3C0B2D00399672 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = testNSURLNetworkingAndBlockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testNSURLNetworkingAndBlock.app/testNSURLNetworkingAndBlock";
-			};
-			name = Debug;
-		};
-		666E69A91B3C0B2D00399672 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = testNSURLNetworkingAndBlockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testNSURLNetworkingAndBlock.app/testNSURLNetworkingAndBlock";
 			};
 			name = Release;
 		};
@@ -412,15 +356,6 @@
 			buildConfigurations = (
 				666E69A51B3C0B2D00399672 /* Debug */,
 				666E69A61B3C0B2D00399672 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		666E69A71B3C0B2D00399672 /* Build configuration list for PBXNativeTarget "testNSURLNetworkingAndBlockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				666E69A81B3C0B2D00399672 /* Debug */,
-				666E69A91B3C0B2D00399672 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

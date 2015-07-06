@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PhotoManager.h"
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imagesView;
+@property (nonatomic) NSUInteger numberOfPhotos;
 
 @end
 
